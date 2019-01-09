@@ -23,4 +23,4 @@ dotnet test --logger:"nunit;LogFilePath=../test-results/results.xml"
 ```
 dotnet test --filter "FullyQualifiedName=xUnitSample.UnitTest1.Test1"  --logger:"nunit;LogFilePath=../test-result.xml"
 ```
-[dotnet test command reference](https://docs.microsoft.com/en-us/dotnet/core/tools/dotnet-test)
+Command reference: [dotnet test](https://docs.microsoft.com/en-us/dotnet/core/tools/dotnet-test)
