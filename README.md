@@ -1,8 +1,8 @@
-﻿# .NET Core xUnit Test Sample project
+﻿# .NET Core xUnit Test Sample Project
 This is a xUnit test project running on .NET Core
 Support .NET Core 2.1+
 
-# Package Dependencies:
+# Package Dependencies
 [NunitXml.TestLogger](https://github.com/spekt/nunit.testlogger) to generate [NUnit 3 format](https://github.com/nunit/docs/wiki/Test-Result-XML-Format)
 
 [Selenium.WebDriver](https://www.nuget.org/packages/Selenium.WebDriver/)
