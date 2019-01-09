@@ -4,8 +4,11 @@ Support .NET Core 2.1+
 
 # Package Dependencies:
 [NunitXml.TestLogger](https://github.com/spekt/nunit.testlogger) to generate [NUnit 3 format](https://github.com/nunit/docs/wiki/Test-Result-XML-Format)
+
 [Selenium.WebDriver](https://www.nuget.org/packages/Selenium.WebDriver/)
+
 [Selenium.Support](https://www.nuget.org/packages/Selenium.Support/)
+
 [Selenium.WebDriver.ChromeDriver (Win32, macOS, and Linux64)](https://www.nuget.org/packages/Selenium.WebDriver.ChromeDriver/)
 
  
