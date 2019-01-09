@@ -1,6 +1,7 @@
+/test-results/**
 .DS_Store
 .vs
 .vscode
 **/bin/**
 **/obj/**
-test-results
+**/*/.gitignore
