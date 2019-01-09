@@ -15,7 +15,7 @@ Intalled via NuGet:
 
  
 # Run tests on Command Prompt or Terminal
-We will execute the test using *dotnet test* command
+Run tests **dotnet test** command
 
 1. Run all tests (classes and methods) in the project and generate XML results
 ``` 
@@ -34,4 +34,4 @@ dotnet test --filter "DisplayName=xUnitSample.UnitTest.PassingTest" --logger:"nu
 dotnet test --filter "FullyQualifiedName!=xUnitSample.UnitTest.FailingTest" --logger:"nunit;LogFilePath=../test-results/results.xml"
 ```
 
-Refer to [dotnet test documentation](https://docs.microsoft.com/en-us/dotnet/core/tools/dotnet-test) for more options regaring *dotnet test* command
+Refer to [dotnet test documentation](https://docs.microsoft.com/en-us/dotnet/core/tools/dotnet-test) for more options regarding **dotnet test** command
