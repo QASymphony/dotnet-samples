@@ -1,0 +1,16 @@
+/Users/huynguyen/Projects/DotnetCore.xUnitSample/DotnetCore.xUnitSample/bin/Debug/netcoreapp2.1/xunit.runner.visualstudio.dotnetcore.testadapter.dll
+/Users/huynguyen/Projects/DotnetCore.xUnitSample/DotnetCore.xUnitSample/bin/Debug/netcoreapp2.1/xunit.runner.reporters.netcoreapp10.dll
+/Users/huynguyen/Projects/DotnetCore.xUnitSample/DotnetCore.xUnitSample/bin/Debug/netcoreapp2.1/xunit.runner.utility.netcoreapp10.dll
+/Users/huynguyen/Projects/DotnetCore.xUnitSample/DotnetCore.xUnitSample/bin/Debug/netcoreapp2.1/DotnetCore.xUnitSample.deps.json
+/Users/huynguyen/Projects/DotnetCore.xUnitSample/DotnetCore.xUnitSample/bin/Debug/netcoreapp2.1/DotnetCore.xUnitSample.runtimeconfig.json
+/Users/huynguyen/Projects/DotnetCore.xUnitSample/DotnetCore.xUnitSample/bin/Debug/netcoreapp2.1/DotnetCore.xUnitSample.runtimeconfig.dev.json
+/Users/huynguyen/Projects/DotnetCore.xUnitSample/DotnetCore.xUnitSample/bin/Debug/netcoreapp2.1/DotnetCore.xUnitSample.dll
+/Users/huynguyen/Projects/DotnetCore.xUnitSample/DotnetCore.xUnitSample/bin/Debug/netcoreapp2.1/DotnetCore.xUnitSample.pdb
+/Users/huynguyen/Projects/DotnetCore.xUnitSample/DotnetCore.xUnitSample/obj/Debug/netcoreapp2.1/DotnetCore.xUnitSample.csprojAssemblyReference.cache
+/Users/huynguyen/Projects/DotnetCore.xUnitSample/DotnetCore.xUnitSample/obj/Debug/netcoreapp2.1/DotnetCore.xUnitSample.csproj.CoreCompileInputs.cache
+/Users/huynguyen/Projects/DotnetCore.xUnitSample/DotnetCore.xUnitSample/obj/Debug/netcoreapp2.1/DotnetCore.xUnitSample.AssemblyInfoInputs.cache
+/Users/huynguyen/Projects/DotnetCore.xUnitSample/DotnetCore.xUnitSample/obj/Debug/netcoreapp2.1/DotnetCore.xUnitSample.AssemblyInfo.cs
+/Users/huynguyen/Projects/DotnetCore.xUnitSample/DotnetCore.xUnitSample/obj/Debug/netcoreapp2.1/DotnetCore.xUnitSample.dll
+/Users/huynguyen/Projects/DotnetCore.xUnitSample/DotnetCore.xUnitSample/obj/Debug/netcoreapp2.1/DotnetCore.xUnitSample.pdb
+/Users/huynguyen/Projects/DotnetCore.xUnitSample/DotnetCore.xUnitSample/bin/Debug/netcoreapp2.1/Microsoft.VisualStudio.TestPlatform.Extension.NUnit.Xml.TestLogger.dll
+/Users/huynguyen/Projects/DotnetCore.xUnitSample/DotnetCore.xUnitSample/bin/Debug/netcoreapp2.1/Microsoft.VisualStudio.TestPlatform.Extension.NUnit.Xml.TestAdapter.dll
