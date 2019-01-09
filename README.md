@@ -16,8 +16,11 @@ Intalled via NuGet:
  
 # Run test on Command Prompt or Terminal
 1. Run all tests in the project and generate XML results
+``` 
 dotnet test --logger:"nunit;LogFilePath=../test-results/results.xml"
+```
 2. Run specific test method in the test project, e.g. Test1, and generate XML result
+```
 dotnet test --filter "FullyQualifiedName=xUnitSample.UnitTest1.Test1"  --logger:"nunit;LogFilePath=../test-result.xml"
-
+```
 [dotnet test command reference](https://docs.microsoft.com/en-us/dotnet/core/tools/dotnet-test)
