@@ -14,13 +14,24 @@ Intalled via NuGet:
 4. [Selenium.WebDriver.ChromeDriver (Win32, macOS, and Linux64)](https://www.nuget.org/packages/Selenium.WebDriver.ChromeDriver/)
 
  
-# Run test on Command Prompt or Terminal
-1. Run all tests in the project and generate XML results
+# Run tests on Command Prompt or Terminal
+We will execute the test using *dotnet test* command
+
+1. Run all tests (classes and methods) in the project and generate XML results
 ``` 
 dotnet test --logger:"nunit;LogFilePath=../test-results/results.xml"
 ```
-2. Run specific test method in the test project, e.g. Test1, and generate XML result
+2. Run specific test class in the project and generate XML result
 ```
-dotnet test --filter "FullyQualifiedName=xUnitSample.UnitTest1.Test1"  --logger:"nunit;LogFilePath=../test-result.xml"
+dotnet test --filter "DisplayName~BrowserTest" --logger:"nunit;LogFilePath=../test-results/results.xml"
 ```
-Command reference: [dotnet test](https://docs.microsoft.com/en-us/dotnet/core/tools/dotnet-test)
+3. Run only one test method in the test project, e.g. xUnitSample.UnitTest.PassingTes, and generate XML result
+```
+dotnet test --filter "DisplayName=xUnitSample.UnitTest.PassingTest" --logger:"nunit;LogFilePath=../test-results/results.xml"
+```
+4. Run all tests except specific method in the test project, and generate XML result
+```
+dotnet test --filter "FullyQualifiedName!=xUnitSample.UnitTest.FailingTest" --logger:"nunit;LogFilePath=../test-results/results.xml"
+```
+
+Refer to [dotnet test documentation](https://docs.microsoft.com/en-us/dotnet/core/tools/dotnet-test) for more options regaring *dotnet test* command
