@@ -1,5 +1,6 @@
 ﻿# .NET Core xUnit Test Sample Project
 This is a xUnit test project running on .NET Core
+
 Support .NET Core 2.1+
 
 # Package Dependencies
