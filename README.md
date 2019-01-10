@@ -16,7 +16,9 @@ Intalled via NuGet:
 
  
 # Run tests on Command Prompt or Terminal
-Open Terminal (or Command Prompt on Windows). Navigate to the dotnetcore-xunit-sample/ directory
+Open Terminal (or Command Prompt on Windows). 
+
+Navigate to the **dotnetcore-xunit-sample** directory.
 
 Publish the test project:
 ```
