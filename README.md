@@ -22,15 +22,15 @@ Run tests **dotnet test** command
 ``` 
 dotnet test --logger:"nunit;LogFilePath=../test-results/results.xml"
 ```
-2. Run specific test class in the project and generate XML result
+2. Run specific test class in the project and generate NUnit XML result
 ```
 dotnet test --filter "DisplayName~BrowserTest" --logger:"nunit;LogFilePath=../test-results/results.xml"
 ```
-3. Run only one test method in the test project, e.g. xUnitSample.UnitTest.PassingTes, and generate XML result
+3. Run only one test method in the test project, e.g. xUnitSample.UnitTest.PassingTest, and generate NUnit XML result
 ```
 dotnet test --filter "DisplayName=xUnitSample.UnitTest.PassingTest" --logger:"nunit;LogFilePath=../test-results/results.xml"
 ```
-4. Run all tests except specific method in the test project, and generate XML result
+4. Run all tests except specific method in the test project, and generate NUnit XML result
 ```
 dotnet test --filter "FullyQualifiedName!=xUnitSample.UnitTest.FailingTest" --logger:"nunit;LogFilePath=../test-results/results.xml"
 ```
