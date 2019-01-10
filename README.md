@@ -16,7 +16,7 @@ Intalled via NuGet:
 
  
 # Run tests on Command Prompt or Terminal
-Run tests **dotnet test** command
+Run tests with **dotnet test** command
 
 1. Run all tests (classes and methods) in the project and generate XML results
 ``` 
