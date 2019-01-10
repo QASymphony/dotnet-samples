@@ -24,11 +24,11 @@ Publish the test project:
 ```
 dotnet publish xUnitSample/xUnitSample.csproj
 ```
-This command will publish the project to dotnetcore-xunit-sample/xUnitSample/bin/Debug/netcoreapp2.1/publish/ directory
+This command will publish the project to **dotnetcore-xunit-sample/xUnitSample/bin/Debug/netcoreapp2.1/publish** directory
 
 Now, run tests using any of these **dotnet vstest** command that fits your need. Below are some examples:
 
-1. Run all tests (classes and methods) in the project and generate XML results
+1. Run all tests (classes and methods) in the project and generate NUnit XML results
 ``` 
 dotnet vstest xUnitSample/bin/Debug/netcoreapp2.1/publish/xUnitSample.dll --logger:"nunit;LogFilePath=./test-results/regressiontest-results.xml"
 ```
