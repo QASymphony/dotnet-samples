@@ -1,5 +1,6 @@
 ﻿# .NET Core xUnit Test Sample Project
 This is a xUnit test project running on .NET Core
+
 Support .NET Core 2.1+
 
 # Package Dependencies
@@ -15,23 +16,23 @@ Intalled via NuGet:
 
  
 # Run tests on Command Prompt or Terminal
-Run tests **dotnet test** command
+Run tests with **dotnet test** command
 
 1. Run all tests (classes and methods) in the project and generate XML results
 ``` 
-dotnet test --logger:"xunit;LogFilePath=../test-results/results.xml"
+dotnet test "xUnitSample/xUnitSample.csproj" --logger:"nunit;LogFilePath=../test-results/results.xml"
 ```
-2. Run specific test class in the project and generate XML result
+2. Run specific test class in the project and generate NUnit XML result
 ```
-dotnet test --filter "DisplayName~BrowserTest" --logger:"nunit;LogFilePath=../test-results/results.xml"
+dotnet test "xUnitSample/xUnitSample.csproj" --filter "DisplayName~BrowserTest" --logger:"nunit;LogFilePath=../test-results/results.xml"
 ```
-3. Run only one test method in the test project, e.g. xUnitSample.UnitTest.PassingTes, and generate XML result
+3. Run only one test method in the test project, e.g. xUnitSample.UnitTest.PassingTest, and generate NUnit XML result
 ```
-dotnet test --filter "DisplayName=xUnitSample.UnitTest.PassingTest" --logger:"nunit;LogFilePath=../test-results/results.xml"
+dotnet test "xUnitSample/xUnitSample.csproj" --filter "DisplayName=xUnitSample.UnitTest.PassingTest" --logger:"nunit;LogFilePath=../test-results/results.xml"
 ```
-4. Run all tests except specific method in the test project, and generate XML result
+4. Run all tests except specific method in the test project, and generate NUnit XML result
 ```
-dotnet test --filter "FullyQualifiedName!=xUnitSample.UnitTest.FailingTest" --logger:"nunit;LogFilePath=../test-results/results.xml"
+dotnet test "xUnitSample/xUnitSample.csproj" --filter "FullyQualifiedName!=xUnitSample.UnitTest.FailingTest" --logger:"nunit;LogFilePath=../test-results/results.xml"
 ```
 
 Refer to [dotnet test documentation](https://docs.microsoft.com/en-us/dotnet/core/tools/dotnet-test) for more options regarding **dotnet test** command
