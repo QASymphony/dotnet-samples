@@ -6,3 +6,6 @@
 **/obj/**
 **/*/.gitignore
 **/*/.DS_Store
+**/.dotnet/**
+**/.local/**
+**/.nuget/**
