@@ -19,7 +19,7 @@ Run tests **dotnet test** command
 
 1. Run all tests (classes and methods) in the project and generate XML results
 ``` 
-dotnet test --logger:"nunit;LogFilePath=../test-results/results.xml"
+dotnet test --logger:"xunit;LogFilePath=../test-results/results.xml"
 ```
 2. Run specific test class in the project and generate XML result
 ```
