@@ -16,23 +16,34 @@ Intalled via NuGet:
 
  
 # Run tests on Command Prompt or Terminal
-Run tests with **dotnet test** command
+Open Terminal (or Command Prompt on Windows). Navigate to the dotnetcore-xunit-sample/ directory
+
+Publish the test project:
+```
+dotnet publish xUnitSample/xUnitSample.csproj
+```
+This command will publish the project to dotnetcore-xunit-sample/xUnitSample/bin/Debug/netcoreapp2.1/publish/ directory
+
+Now, run tests using any of these **dotnet vstest** command that fits your need. Below are some examples:
 
 1. Run all tests (classes and methods) in the project and generate XML results
 ``` 
-dotnet test "xUnitSample/xUnitSample.csproj" --logger:"nunit;LogFilePath=../test-results/results.xml"
+dotnet vstest xUnitSample/bin/Debug/netcoreapp2.1/publish/xUnitSample.dll --logger:"nunit;LogFilePath=./test-results/regressiontest-results.xml"
 ```
-2. Run specific test class in the project and generate NUnit XML result
+2. Run specific test class, e.g. BrowserTest, in the project and generate NUnit XML result
 ```
-dotnet test "xUnitSample/xUnitSample.csproj" --filter "DisplayName~BrowserTest" --logger:"nunit;LogFilePath=../test-results/results.xml"
-```
-3. Run only one test method in the test project, e.g. xUnitSample.UnitTest.PassingTest, and generate NUnit XML result
-```
-dotnet test "xUnitSample/xUnitSample.csproj" --filter "DisplayName=xUnitSample.UnitTest.PassingTest" --logger:"nunit;LogFilePath=../test-results/results.xml"
-```
-4. Run all tests except specific method in the test project, and generate NUnit XML result
-```
-dotnet test "xUnitSample/xUnitSample.csproj" --filter "FullyQualifiedName!=xUnitSample.UnitTest.FailingTest" --logger:"nunit;LogFilePath=../test-results/results.xml"
+dotnet vstest xUnitSample/bin/Debug/netcoreapp2.1/publish/xUnitSample.dll /Tests:BrowserTest --logger:"nunit;LogFilePath=./test-results/browsertest-results.xml"
 ```
 
-Refer to [dotnet test documentation](https://docs.microsoft.com/en-us/dotnet/core/tools/dotnet-test) for more options regarding **dotnet test** command
+or UnitTest class only
+
+```
+dotnet vstest xUnitSample/bin/Debug/netcoreapp2.1/publish/xUnitSample.dll /Tests:UnitTest --logger:"nunit;LogFilePath=./test-results/unittest-results.xml"
+```
+3. Run only one test method in the test project, e.g. xUnitSample.UnitTest.FailingTest, and generate NUnit XML result
+```
+dotnet vstest xUnitSample/bin/Debug/netcoreapp2.1/publish/xUnitSample.dll /Tests:xUnitSample.UnitTest.FailingTest --logger:"nunit;LogFilePath=./test-results/xUnitSample.UnitTest.FailingTest-results.xml"
+
+```
+
+Refer to [dotnet vstest documentation](https://docs.microsoft.com/en-us/dotnet/core/tools/dotnet-vstest?tabs=netcore21) for more options regarding **dotnet vstest** command
