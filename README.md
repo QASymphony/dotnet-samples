@@ -28,11 +28,11 @@ This command will publish the project to **dotnetcore-xunit-sample/xUnitSample/b
 
 Now, run tests using any of these **dotnet vstest** command that fits your need. Below are some examples:
 
-1. Run all tests (classes and methods) in the project and generate NUnit XML results
+1. Run all tests (classes and methods) in the test project and generate NUnit XML results
 ``` 
 dotnet vstest xUnitSample/bin/Debug/netcoreapp2.1/publish/xUnitSample.dll --logger:"nunit;LogFilePath=./test-results/regressiontest-results.xml"
 ```
-2. Run specific test class, e.g. BrowserTest, in the project and generate NUnit XML result
+2. Run specific test class, e.g. BrowserTest, in the test project and generate NUnit XML result
 ```
 dotnet vstest xUnitSample/bin/Debug/netcoreapp2.1/publish/xUnitSample.dll /Tests:BrowserTest --logger:"nunit;LogFilePath=./test-results/browsertest-results.xml"
 ```
@@ -42,7 +42,7 @@ or UnitTest class only
 ```
 dotnet vstest xUnitSample/bin/Debug/netcoreapp2.1/publish/xUnitSample.dll /Tests:UnitTest --logger:"nunit;LogFilePath=./test-results/unittest-results.xml"
 ```
-3. Run only one test method in the test project, e.g. xUnitSample.UnitTest.FailingTest, and generate NUnit XML result
+3. Run only one test method of a test class in the test project, e.g. xUnitSample.UnitTest.FailingTest, and generate NUnit XML result
 ```
 dotnet vstest xUnitSample/bin/Debug/netcoreapp2.1/publish/xUnitSample.dll /Tests:xUnitSample.UnitTest.FailingTest --logger:"nunit;LogFilePath=./test-results/xUnitSample.UnitTest.FailingTest-results.xml"
 
