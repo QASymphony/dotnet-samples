@@ -4,7 +4,6 @@ using ArithmeticLibrary;
 
 namespace xUnitSample
 {
-
     public class ArithmeticCalculationsTest : IDisposable
     {
         private readonly ArithmeticCalculations _arithmetic;

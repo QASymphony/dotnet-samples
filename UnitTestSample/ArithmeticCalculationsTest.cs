@@ -1,7 +1,12 @@
+﻿/** 
+ * .NET Standard Versions
+ * https://github.com/dotnet/standard/blob/master/docs/versions.md
+ */
+
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using ArithmeticLibrary;
 
-namespace MSTestSample
+namespace UnitTestSample
 {
     [TestClass]
     public class ArithmeticCalculationsTest
