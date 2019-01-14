@@ -1,5 +1,5 @@
 ﻿# .NET Test Sample Projects
-This is sample .NET test projects running on .NET
+This is sample test projects running on .NET Platform
 
 DotnetCore folder contains test projects that support .NET Core 2.1+: xUnitSample, MSTestSample, NUnitSample
 
