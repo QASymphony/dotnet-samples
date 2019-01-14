@@ -32,7 +32,7 @@ namespace xUnitSample
         }
 
         [Fact]
-        public void FailingDivisionnTest()
+        public void FailingDivisionTest()
         {
             Assert.Equal(1, _arithmeticCalculator.Divide(8, 4));
         }
