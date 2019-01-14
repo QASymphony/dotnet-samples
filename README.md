@@ -1,7 +1,9 @@
-﻿# .NET Core xUnit Test Sample Project
-This is a xUnit test project running on .NET Core
+﻿# .NET Test Sample Projects
+This is sample .NET test projects running on .NET
 
-Support .NET Core 2.1+
+DotnetCore folder contains test projects that support .NET Core 2.1+: xUnitSample, MSTestSample, NUnitSample
+
+Dotnet folder contains test projects that support .NET 4.6: UnitTestSample
 
 # Package Dependencies
 Intalled via NuGet:
@@ -18,33 +20,33 @@ Intalled via NuGet:
 # Run tests on Command Prompt or Terminal
 Open Terminal (or Command Prompt on Windows). 
 
-Navigate to the **dotnetcore-xunit-sample** directory.
+Navigate to the **dotnet-samples** directory.
 
 Publish the test project:
 ```
-dotnet publish xUnitSample/xUnitSample.csproj
+dotnet publish DotnetCore/xUnitSample/xUnitSample.csproj
 ```
-This command will publish the project to **dotnetcore-xunit-sample/xUnitSample/bin/Debug/netcoreapp2.1/publish** directory
+This command will publish the project to **dotnet-samples/DotnetCore/xUnitSample/bin/Debug/netcoreapp2.1/publish** directory
 
 Now, run tests using any of these **dotnet vstest** command that fits your need. Below are some examples:
 
 1. Run all tests (classes and methods) in the test project and generate NUnit XML results
 ``` 
-dotnet vstest xUnitSample/bin/Debug/netcoreapp2.1/publish/xUnitSample.dll --logger:"nunit;LogFilePath=./test-results/regressiontest-results.xml"
+dotnet vstest DotnetCore/xUnitSample/bin/Debug/netcoreapp2.1/publish/xUnitSample.dll --logger:"nunit;LogFilePath=./test-results/regressiontest-results.xml"
 ```
 2. Run specific test class, e.g. BrowserTest, in the test project and generate NUnit XML result
 ```
-dotnet vstest xUnitSample/bin/Debug/netcoreapp2.1/publish/xUnitSample.dll /Tests:BrowserTest --logger:"nunit;LogFilePath=./test-results/browsertest-results.xml"
+dotnet vstest DotnetCore/xUnitSample/bin/Debug/netcoreapp2.1/publish/xUnitSample.dll /Tests:BrowserTest --logger:"nunit;LogFilePath=./test-results/browsertest-results.xml"
 ```
 
 or UnitTest class only
 
 ```
-dotnet vstest xUnitSample/bin/Debug/netcoreapp2.1/publish/xUnitSample.dll /Tests:UnitTest --logger:"nunit;LogFilePath=./test-results/unittest-results.xml"
+dotnet vstest DotnetCore/xUnitSample/bin/Debug/netcoreapp2.1/publish/xUnitSample.dll /Tests:UnitTest --logger:"nunit;LogFilePath=./test-results/unittest-results.xml"
 ```
 3. Run only one test method of a test class in the test project, e.g. xUnitSample.UnitTest.FailingTest, and generate NUnit XML result
 ```
-dotnet vstest xUnitSample/bin/Debug/netcoreapp2.1/publish/xUnitSample.dll /Tests:xUnitSample.UnitTest.FailingTest --logger:"nunit;LogFilePath=./test-results/xUnitSample.UnitTest.FailingTest-results.xml"
+dotnet vstest DotnetCore/xUnitSample/bin/Debug/netcoreapp2.1/publish/xUnitSample.dll /Tests:xUnitSample.UnitTest.FailingTest --logger:"nunit;LogFilePath=./test-results/xUnitSample.UnitTest.FailingTest-results.xml"
 
 ```
 
