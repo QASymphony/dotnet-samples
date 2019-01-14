@@ -10,6 +10,9 @@
     <PackageReference Include="nunit" Version="3.10.1" />
     <PackageReference Include="NUnit3TestAdapter" Version="3.10.0" />
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="15.8.0" />
+    <PackageReference Include="NunitXml.TestLogger" Version="2.1.36" />
+    <PackageReference Include="Selenium.WebDriver" Version="3.141.0" />
+    <PackageReference Include="Selenium.WebDriver.ChromeDriver" Version="2.45.0" />
   </ItemGroup>
 
   <ItemGroup>
