@@ -1,6 +1,6 @@
 ﻿namespace ArithmeticLibrary
 {
-    public class ArithmeticCalculations
+    public class ArithmeticCalculator
     {
         public decimal Add(int x, int y)
         {

@@ -19,7 +19,7 @@ namespace NUnitTestSample
             _webDriver.Manage().Window.FullScreen();
         }
 
-                /// <summary>
+        /// <summary>
         /// Go to QASymphony website and search for qTest Launch product
         /// </summary>
         [Test]

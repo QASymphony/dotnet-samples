@@ -4,38 +4,38 @@ using ArithmeticLibrary;
 namespace UnitTestSample
 {
     [TestClass]
-    public class ArithmeticCalculationsTest
+    public class ArithmeticCalculatorTest
     {
-        private ArithmeticCalculations _arithmetic;
+        private ArithmeticCalculator _arithmeticCalculator;
 
         [TestInitialize]
         public void Initialize()
         {
-            _arithmetic = new ArithmeticCalculations();
+            _arithmeticCalculator = new ArithmeticCalculator();
         }
 
         [TestMethod]
         public void PassingAdditionTest()
         {
-            Assert.IsTrue(_arithmetic.Add(5, 4) == 9);
+            Assert.IsTrue(_arithmeticCalculator.Add(5, 4) == 9);
         }
 
         [TestMethod]
         public void FailingSubtractionTest()
         {
-            Assert.IsTrue(_arithmetic.Subtract(5, 4) == 0);
+            Assert.IsTrue(_arithmeticCalculator.Subtract(5, 4) == 0);
         }
 
         [TestMethod]
         public void PassingMultiplicationTest()
         {
-            Assert.IsTrue(_arithmetic.Multiply(5, 4) == 20);
+            Assert.IsTrue(_arithmeticCalculator.Multiply(5, 4) == 20);
         }
 
         [TestMethod]
-        public void FailingMultiplicationTest()
+        public void FailingDivisionTest()
         {
-            Assert.IsTrue(_arithmetic.Multiply(8, 4) == 1);
+            Assert.IsTrue(_arithmeticCalculator.Divide(8, 4) == 1);
         }
     }
 }
