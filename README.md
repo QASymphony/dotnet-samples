@@ -1,9 +1,14 @@
 ﻿# .NET Test Sample Projects
-This is sample test projects running on .NET Platform
+This is sample .NET test projects for integrating with [Universal Agent](https://support.qasymphony.com/hc/en-us/articles/360004704172-Universal-Agent-Overview). This repo contains:
 
-DotnetCore folder contains test projects that support .NET Core 2.1+: xUnitSample, MSTestSample, NUnitSample
+1. Test projects that support .NET Core 2.1+: xUnitSample, MSTestSample, NUnitSample
+2. Test project that support .NET 4.5 (Windows only): UnitTestSample
 
-Dotnet folder contains test projects that support .NET 4.6: UnitTestSample
+Follow these instructions for integrating with [Universal Agent](https://support.qasymphony.com/hc/en-us/articles/360004704172-Universal-Agent-Overview)
+1. [Integrate NUnit with Universal Agent](https://support.qasymphony.com/hc/en-us/articles/360021796232)
+2. [Integrate MSTest with Universal Agent](https://support.qasymphony.com/hc/en-us/articles/360021798132)
+3. [Integrate xUnit.net with Universal Agent](https://support.qasymphony.com/hc/en-us/articles/360021750432)
+
 
 # Package Dependencies
 Intalled via NuGet:
@@ -16,7 +21,7 @@ Intalled via NuGet:
 
 4. [Selenium.WebDriver.ChromeDriver (Win32, macOS, and Linux64)](https://www.nuget.org/packages/Selenium.WebDriver.ChromeDriver/)
 
-# For .NET Core 2.1+: xUnitSample, MSTestSample, NUnitSample project
+# .NET Core 2.1+: xUnitSample, MSTestSample, NUnitSample project
 
 ## Run tests on Command Prompt or Terminal
 Open Terminal (or Command Prompt on Windows). 
@@ -54,9 +59,9 @@ The command line to run tests for MSTestSample, NUnitSample project similar to x
 
 Refer to [dotnet vstest documentation](https://docs.microsoft.com/en-us/dotnet/core/tools/dotnet-vstest?tabs=netcore21) for more options regarding **dotnet vstest** command
 
-# For .NET 4.5+: UnitTestSample project (only support on Windows)
+# .NET 4.5+: UnitTestSample project (Windows only)
 
-## Run tests on Command Prompt or Terminal
+## Run tests on Command Prompt
 Open Command Prompt on Windows. 
 
 Navigate to the **dotnet-samples** directory.
