@@ -28,7 +28,7 @@ Open Terminal (or Command Prompt on Windows).
 
 Navigate to the **dotnet-samples** directory.
 
-Publish the test project:
+Publish the test project, e.g. xUnitSample
 ```
 dotnet publish DotnetCore/xUnitSample/xUnitSample.csproj
 ```
