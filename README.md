@@ -1,5 +1,5 @@
 ﻿# .NET Test Sample Projects
-This is sample .NET test projects for integrating with [Universal Agent](https://support.qasymphony.com/hc/en-us/articles/360004704172-Universal-Agent-Overview). This repo contains:
+This is sample .NET solution for integrating with [Universal Agent](https://support.qasymphony.com/hc/en-us/articles/360004704172-Universal-Agent-Overview). This solution contains:
 
 1. Test projects that support .NET Core 2.1+: xUnitSample, MSTestSample, NUnitSample
 2. Test project that support .NET 4.5 (Windows only): UnitTestSample
