@@ -1,4 +1,5 @@
 /test-results/**
+**/test-results/**
 .DS_Store
 .vs
 .vscode
@@ -10,3 +11,5 @@
 **/.local/**
 **/.nuget/**
 /packages/**
+/TestResults/**
+**/PublishProfiles/**
