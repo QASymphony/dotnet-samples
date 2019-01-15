@@ -63,7 +63,7 @@ Navigate to the **dotnet-samples** directory.
 
 Build project on Visual Studio to generate UnitTestSample.dll file on bin\Debug folder.
 
-Open Developer Command Prompt and type ```where vstest.console.exe``` to find the location of vstest.console.exe, e.g "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\CommonExtensions\Microsoft\TestWindow\vstest.console.exe".
+Open Developer Command Prompt and type ```where vstest.console.exe``` to find the location of vstest.console.exe, e.g "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\CommonExtensions\Microsoft\TestWindow".
 
 Set the path of vstest.console.exe to system environment variables.
 
