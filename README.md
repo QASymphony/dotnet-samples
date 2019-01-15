@@ -16,9 +16,9 @@ Intalled via NuGet:
 
 4. [Selenium.WebDriver.ChromeDriver (Win32, macOS, and Linux64)](https://www.nuget.org/packages/Selenium.WebDriver.ChromeDriver/)
 
-## For .NET Core 2.1+: xUnitSample, MSTestSample, NUnitSample project
+# For .NET Core 2.1+: xUnitSample, MSTestSample, NUnitSample project
 
-# Run tests on Command Prompt or Terminal
+## Run tests on Command Prompt or Terminal
 Open Terminal (or Command Prompt on Windows). 
 
 Navigate to the **dotnet-samples** directory.
@@ -54,9 +54,9 @@ The command line to run tests for MSTestSample, NUnitSample project similar to x
 
 Refer to [dotnet vstest documentation](https://docs.microsoft.com/en-us/dotnet/core/tools/dotnet-vstest?tabs=netcore21) for more options regarding **dotnet vstest** command
 
-## For .NET 4.5+: UnitTestSample project (only support on Windows)
+# For .NET 4.5+: UnitTestSample project (only support on Windows)
 
-# Run tests on Command Prompt or Terminal
+## Run tests on Command Prompt or Terminal
 Open Command Prompt on Windows. 
 
 Navigate to the **dotnet-samples** directory.
