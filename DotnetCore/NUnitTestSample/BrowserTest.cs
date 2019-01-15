@@ -41,17 +41,6 @@ namespace NUnitTestSample
             h2Element.Click();
         }
 
-        /// <summary>
-        /// Search for a non-existing element and click on it, which will make the test failed
-        /// </summary>
-        [Test]
-        public void FailingTest()
-        {
-            _webDriver.Navigate().GoToUrl(this.BaseURL);
-            IWebElement element = _webDriver.FindElement(By.Id("Non-Existing Element"));
-            element.Click();
-        }
-
         [TearDown]
         public void Cleanup()
         {

@@ -42,17 +42,6 @@ namespace xUnitSample
             h2Element.Click();
         }
 
-        /// <summary>
-        /// Search for a non-existing element and click on it, which will make the test failed
-        /// </summary>
-        [Fact]
-        public void FailingTest()
-        { 
-            _webDriver.Navigate().GoToUrl("https://www.qasymphony.com");
-            IWebElement element = _webDriver.FindElement(By.Id("Non-Existing Element"));
-            element.Click();
-        }
-
         public void Dispose()
         {
             _webDriver.Close();
