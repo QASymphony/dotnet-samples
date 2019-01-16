@@ -54,18 +54,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ArithmeticCalculator.cs" />
     <Compile Include="ArithmeticCalculatorTest.cs" />
     <Compile Include="BrowserTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\..\ArithmeticLibrary\ArithmeticLibrary.csproj">
-      <Project>{def61301-b253-4d30-ac5e-36a72a8d6368}</Project>
-      <Name>ArithmeticLibrary</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -79,7 +79,7 @@ Open Command Prompt on Windows.
 Navigate to the **dotnet-samples** directory.
 Build the test project
 ```
-"C:\Program Files\dotnet\dotnet.exe" msbuild Dotnet-Samples.sln /p:Configuration=Debug /p:Platform="Any CPU"
+"C:\Program Files (x86)\MSBuild\12.0\Bin\MSBuild.exe" Dotnet-Samples.sln /p:Configuration=Debug /p:Platform="Any CPU"
 ````
 
 Open Developer Command Prompt and type ```where vstest.console.exe``` to find the location of vstest.console.exe, e.g "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\CommonExtensions\Microsoft\TestWindow".
