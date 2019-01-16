@@ -74,9 +74,13 @@ Refer to [dotnet vstest documentation](https://docs.microsoft.com/en-us/dotnet/c
 # .NET 4.5+: UnitTestSample project (Windows only)
 
 ## Run tests on Command Prompt
-Open Command Prompt on Windows. 
-
+Download [Nuget CLI] (https://dist.nuget.org/win-x86-commandline/latest/nuget.exe) to restore the Nuget packages.
 Navigate to the **dotnet-samples** directory.
+Open Command Prompt on Windows. 
+Run command to restore the packages
+```
+path/to/nuget.exe restore Dotnet-Samples.sln
+```
 Build the test project
 ```
 "C:\Program Files (x86)\MSBuild\12.0\Bin\MSBuild.exe" Dotnet-Samples.sln /p:Configuration=Debug /p:Platform="Any CPU"
