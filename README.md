@@ -67,7 +67,7 @@ dotnet vstest DotnetCore/xUnitSample/bin/Debug/netcoreapp2.1/publish/xUnitSample
 dotnet vstest DotnetCore/xUnitSample/bin/Debug/netcoreapp2.1/publish/xUnitSample.dll /Tests:xUnitSample.UnitTest.FailingTest --logger:"nunit;LogFilePath=./test-results/xUnitSample.UnitTest.FailingTest-results.xml"
 
 ```
-The commands to run tests for MSTestSample, NUnitSample projectsa are similar to xUnitSample project, you just need to change the xUnitSample to MSTestSample or NUnitSample.
+The commands to run tests for MSTestSample, NUnitSample projects are similar to xUnitSample project, you just need to change the xUnitSample to MSTestSample or NUnitSample.
 
 Refer to [dotnet vstest documentation](https://docs.microsoft.com/en-us/dotnet/core/tools/dotnet-vstest?tabs=netcore21) for more options regarding **dotnet vstest** command
 
