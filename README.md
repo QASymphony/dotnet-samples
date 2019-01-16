@@ -34,6 +34,18 @@ dotnet publish DotnetCore/xUnitSample/xUnitSample.csproj
 ```
 This command will publish the project to **dotnet-samples/DotnetCore/xUnitSample/bin/Debug/netcoreapp2.1/publish** directory
 
+Since this project uses Selenium and `publish` command does not automatically copy the chromedriver to the publish directory, execute this command to copy it to the publish directory
+
+**Windows**
+```
+copy DotnetCore/xUnitSample/bin/Debug/chromedriver DotnetCore/xUnitSample/bin/Debug/netcoreapp2.1/publish
+```
+
+**Linux/Mac**
+```
+cp DotnetCore/xUnitSample/bin/Debug/chromedriver DotnetCore/xUnitSample/bin/Debug/netcoreapp2.1/publish
+```
+
 Now, run tests using any of these **dotnet vstest** command that fits your need. Below are some examples:
 
 1. Run all tests (classes and methods) in the test project and generate NUnit XML results
@@ -55,7 +67,7 @@ dotnet vstest DotnetCore/xUnitSample/bin/Debug/netcoreapp2.1/publish/xUnitSample
 dotnet vstest DotnetCore/xUnitSample/bin/Debug/netcoreapp2.1/publish/xUnitSample.dll /Tests:xUnitSample.UnitTest.FailingTest --logger:"nunit;LogFilePath=./test-results/xUnitSample.UnitTest.FailingTest-results.xml"
 
 ```
-The command line to run tests for MSTestSample, NUnitSample project similar to xUnitSample project.
+The commands to run tests for MSTestSample, NUnitSample projectsa are similar to xUnitSample project, you just need to change the xUnitSample to MSTestSample or NUnitSample.
 
 Refer to [dotnet vstest documentation](https://docs.microsoft.com/en-us/dotnet/core/tools/dotnet-vstest?tabs=netcore21) for more options regarding **dotnet vstest** command
 
