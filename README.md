@@ -74,7 +74,7 @@ Refer to [dotnet vstest documentation](https://docs.microsoft.com/en-us/dotnet/c
 # .NET 4.5+: UnitTestSample project (Windows only)
 
 ## Run tests on Command Prompt
-Download [Nuget CLI] (https://dist.nuget.org/win-x86-commandline/latest/nuget.exe) to restore the Nuget packages.
+Download [Nuget CLI](https://dist.nuget.org/win-x86-commandline/latest/nuget.exe) to restore the Nuget packages.
 Navigate to the **dotnet-samples** directory.
 Open Command Prompt on Windows. 
 Run command to restore the packages
