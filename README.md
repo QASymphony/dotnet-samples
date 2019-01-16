@@ -34,11 +34,11 @@ dotnet publish DotnetCore/xUnitSample/xUnitSample.csproj
 ```
 This command will publish the project to **dotnet-samples/DotnetCore/xUnitSample/bin/Debug/netcoreapp2.1/publish** directory
 
-Since this project uses Selenium and `publish` command does not automatically copy the chromedriver to the publish directory, execute this command to copy it to the publish directory
+Since this project uses Selenium and `publish` command does not automatically copy the **chromedriver** to the publish directory, execute this command to copy it to the publish directory.
 
 **Windows**
 ```
-copy DotnetCore/xUnitSample/bin/Debug/chromedriver DotnetCore/xUnitSample/bin/Debug/netcoreapp2.1/publish
+copy DotnetCore\xUnitSample\bin\Debug\chromedriver.exe DotnetCore\xUnitSample\bin\Debug\netcoreapp2.1\publish
 ```
 
 **Linux/Mac**
