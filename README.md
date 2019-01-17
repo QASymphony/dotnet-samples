@@ -1,7 +1,7 @@
 ﻿# .NET Test Samples
 This is sample .NET solution for integrating with [Universal Agent](https://support.qasymphony.com/hc/en-us/articles/360004704172-Universal-Agent-Overview). This solution contains:
 
-1. Test projects that support .NET Core 2.1+: xUnitSample, MSTestSample, NUnitSample
+1. Test projects that support .NET Core 2.2+: xUnitSample, MSTestSample, NUnitSample
 2. Test project that support .NET 4.5 (Windows only): UnitTestSample
 
 Follow these instructions for [integrating with Universal Agent](https://support.qasymphony.com/hc/en-us/articles/360004704172-Universal-Agent-Overview)
@@ -21,7 +21,7 @@ Follow these instructions for [integrating with Universal Agent](https://support
 
 4. [Selenium.WebDriver.ChromeDriver (Win32, macOS, and Linux64)](https://www.nuget.org/packages/Selenium.WebDriver.ChromeDriver/)
 
-# .NET Core 2.1+: xUnitSample, MSTestSample, NUnitSample project
+# .NET Core 2.2+: xUnitSample, MSTestSample, NUnitSample project
 
 ## Run tests on Command Prompt or Terminal
 Open Terminal (or Command Prompt on Windows). 
@@ -32,39 +32,39 @@ Publish the test project so all the dependencies are generated in one place. Bel
 ```
 dotnet publish DotnetCore/xUnitSample/xUnitSample.csproj
 ```
-The command will publish the project to **dotnet-samples/DotnetCore/xUnitSample/bin/Debug/netcoreapp2.1/publish** directory
+The command will publish the project to **dotnet-samples/DotnetCore/xUnitSample/bin/Debug/netcoreapp2.2/publish** directory
 
 Also, since this project uses Selenium and `publish` command does not automatically copy the **chromedriver** (or **chromedriver.exe** on Windows to the publish directory, execute this command to copy it to the publish directory.
 
 **Windows**
 ```
-copy DotnetCore\xUnitSample\bin\Debug\chromedriver.exe DotnetCore\xUnitSample\bin\Debug\netcoreapp2.1\publish
+copy DotnetCore\xUnitSample\bin\Debug\chromedriver.exe DotnetCore\xUnitSample\bin\Debug\netcoreapp2.2\publish
 ```
 
 **Linux/Mac**
 ```
-cp DotnetCore/xUnitSample/bin/Debug/chromedriver DotnetCore/xUnitSample/bin/Debug/netcoreapp2.1/publish
+cp DotnetCore/xUnitSample/bin/Debug/chromedriver DotnetCore/xUnitSample/bin/Debug/netcoreapp2.2/publish
 ```
 
 Now, run tests using any of these **dotnet vstest** command that fits your need. Below are some examples:
 
 1. Run all tests (classes and methods) in the test project and generate NUnit XML results
 ``` 
-dotnet vstest DotnetCore/xUnitSample/bin/Debug/netcoreapp2.1/publish/xUnitSample.dll --logger:"nunit;LogFilePath=./test-results/regressiontest-results.xml"
+dotnet vstest DotnetCore/xUnitSample/bin/Debug/netcoreapp2.2/publish/xUnitSample.dll --logger:"nunit;LogFilePath=./test-results/regressiontest-results.xml"
 ```
 2. Run specific test class, e.g. BrowserTest, in the test project and generate NUnit XML result
 ```
-dotnet vstest DotnetCore/xUnitSample/bin/Debug/netcoreapp2.1/publish/xUnitSample.dll /Tests:BrowserTest --logger:"nunit;LogFilePath=./test-results/browsertest-results.xml"
+dotnet vstest DotnetCore/xUnitSample/bin/Debug/netcoreapp2.2/publish/xUnitSample.dll /Tests:BrowserTest --logger:"nunit;LogFilePath=./test-results/browsertest-results.xml"
 ```
 
 or UnitTest class only
 
 ```
-dotnet vstest DotnetCore/xUnitSample/bin/Debug/netcoreapp2.1/publish/xUnitSample.dll /Tests:UnitTest --logger:"nunit;LogFilePath=./test-results/unittest-results.xml"
+dotnet vstest DotnetCore/xUnitSample/bin/Debug/netcoreapp2.2/publish/xUnitSample.dll /Tests:UnitTest --logger:"nunit;LogFilePath=./test-results/unittest-results.xml"
 ```
 3. Run only one test method of a test class in the test project, e.g. xUnitSample.UnitTest.FailingTest, and generate NUnit XML result
 ```
-dotnet vstest DotnetCore/xUnitSample/bin/Debug/netcoreapp2.1/publish/xUnitSample.dll /Tests:xUnitSample.UnitTest.FailingTest --logger:"nunit;LogFilePath=./test-results/xUnitSample.UnitTest.FailingTest-results.xml"
+dotnet vstest DotnetCore/xUnitSample/bin/Debug/netcoreapp2.2/publish/xUnitSample.dll /Tests:xUnitSample.UnitTest.FailingTest --logger:"nunit;LogFilePath=./test-results/xUnitSample.UnitTest.FailingTest-results.xml"
 
 ```
 The commands to run tests for MSTestSample, NUnitSample projects are similar to xUnitSample project, you just need to change the xUnitSample to MSTestSample or NUnitSample.
