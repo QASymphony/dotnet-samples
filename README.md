@@ -90,7 +90,7 @@ Build the test project
 
 Open Developer Command Prompt and type ```where vstest.console.exe``` to find the location of vstest.console.exe, e.g "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\CommonExtensions\Microsoft\TestWindow".
 
-Set the path of vstest.console.exe to system environment variables.
+Set the path of vstest.console.exe to system environment variables. If you do not do this, you need to give the full path to **vstest.console.exe** in the below commands.
 
 Now, run tests using any of these **vstest.console.exe** command that fits your need.
 Below are some examples:
