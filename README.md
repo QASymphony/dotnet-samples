@@ -107,7 +107,6 @@ vstest.console.exe Dotnet\UnitTestSample\bin\Debug\UnitTestSample.dll /Tests:Ari
 3. Run only one test method of a test class in the test project, e.g. xUnitSample.UnitTest.FailingTest, and generate NUnit XML result
 ```
 vstest.console.exe Dotnet\UnitTestSample\bin\Debug\UnitTestSample.dll /Tests:ArithmeticCalculatorTest.PassingAdditionTest --logger:"nunit;LogFilePath=./test-results/test-result.xml"
-
 ```
 
 Refer to [vstest console documentation](https://docs.microsoft.com/en-us/visualstudio/test/vstest-console-options?view=vs-2017) for more options regarding **vstest.console.exe** command
