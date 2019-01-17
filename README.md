@@ -81,7 +81,7 @@ Open Command Prompt on Windows.
 
 Run command to restore the packages
 ```
-path/to/nuget.exe restore Dotnet-Samples.sln
+\path\to\nuget.exe restore \path\to\Dotnet-Samples.sln
 ```
 Build the test project
 ```
