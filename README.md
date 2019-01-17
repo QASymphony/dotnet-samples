@@ -12,7 +12,6 @@ Follow these instructions for [integrating with Universal Agent](https://support
 
 
 # Package Dependencies
-Intalled via NuGet:
 
 1. [NunitXml.TestLogger](https://github.com/spekt/nunit.testlogger) to generate [NUnit 3 format](https://github.com/nunit/docs/wiki/Test-Result-XML-Format)
 
