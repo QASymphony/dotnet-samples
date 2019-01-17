@@ -28,13 +28,13 @@ Open Terminal (or Command Prompt on Windows).
 
 Navigate to the **dotnet-samples** directory.
 
-Publish the test project, e.g. xUnitSample
+Publish the test project so all the dependencies are generated in one place. Below command shows how to publish xUnitSample project:
 ```
 dotnet publish DotnetCore/xUnitSample/xUnitSample.csproj
 ```
-This command will publish the project to **dotnet-samples/DotnetCore/xUnitSample/bin/Debug/netcoreapp2.1/publish** directory
+The command will publish the project to **dotnet-samples/DotnetCore/xUnitSample/bin/Debug/netcoreapp2.1/publish** directory
 
-Since this project uses Selenium and `publish` command does not automatically copy the **chromedriver** to the publish directory, execute this command to copy it to the publish directory.
+Also, since this project uses Selenium and `publish` command does not automatically copy the **chromedriver** (or **chromedriver.exe** on Windows to the publish directory, execute this command to copy it to the publish directory.
 
 **Windows**
 ```
