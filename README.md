@@ -4,11 +4,11 @@ This is sample .NET solution for integrating with [Universal Agent](https://supp
 1. Test projects that support .NET Core 2.2+: xUnitSample, MSTestSample, NUnitSample
 2. Test project that support .NET 4.5 (Windows only): UnitTestSample
 
-Follow these instructions for [integrating with Universal Agent](https://support.qasymphony.com/hc/en-us/articles/360004704172-Universal-Agent-Overview)
-1. [Integrate NUnit with Universal Agent](https://support.qasymphony.com/hc/en-us/articles/360021796232)
-2. [Integrate MSTest with Universal Agent](https://support.qasymphony.com/hc/en-us/articles/360021798132)
-3. [Integrate xUnit.net with Universal Agent](https://support.qasymphony.com/hc/en-us/articles/360021750432)
-4. [Integrate .NET UnitTest with Universal Agent](https://support.qasymphony.com/hc/en-us/articles/360022030971)
+Follow these instructions for [integrating with Universal Agent](https://documentation.tricentis.com/qtest/od/en/content/qtest_launch/universal_agent_user_guides/universal_agent_overview.htm)
+1. [Integrate NUnit Test with Universal Agent](https://documentation.tricentis.com/qtest/od/en/content/qtest_launch/universal_agent_user_guides/integrate_nunit_test_with_universal_agent.htm)
+2. [Integrate MSTest with Universal Agent](https://documentation.tricentis.com/qtest/od/en/content/qtest_launch/universal_agent_user_guides/integrate_mstest_with_universal_agent.htm)
+3. [Integrate xUnit.net with Universal Agent](https://documentation.tricentis.com/qtest/od/en/content/qtest_launch/universal_agent_user_guides/integrate_.net_unittest_with_universal_agent.htm)
+4. [Integrate .NET UnitTest with Universal Agent](https://documentation.tricentis.com/qtest/od/en/content/qtest_launch/universal_agent_user_guides/integrate_.net_unittest_with_universal_agent.htm)
 
 
 # Package Dependencies
