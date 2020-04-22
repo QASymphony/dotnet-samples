@@ -17,7 +17,7 @@ namespace xUnitSample
         public BrowserTest()
         {
             _webDriver = new ChromeDriver(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location));
-            _webDriver.Manage().Window.FullScreen();
+            _webDriver.Manage().Window.Maximize();
         }
 
         /// <summary>
