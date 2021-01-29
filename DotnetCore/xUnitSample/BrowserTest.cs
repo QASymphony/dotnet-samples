@@ -38,7 +38,7 @@ namespace xUnitSample
             searchInput.SendKeys(Keys.Enter);
 
             // from search result, look for h2 elament containing text qTest Launch, and click on it
-            IWebElement h2Element = _webDriver.FindElement(By.LinkText("https://www.tricentis.com/resources/qtest-launch-test-automation-management/"));
+            IWebElement h2Element = _webDriver.FindElement(By.LinkText("qTest Launch: Test Automation Management | Tricentis"));
             h2Element.Click();
         }
 
