@@ -1,7 +1,7 @@
 ﻿# .NET Test Samples
-This is sample .NET solution for integrating with [Universal Agent](https://support.qasymphony.com/hc/en-us/articles/360004704172-Universal-Agent-Overview). This solution contains:
+This is sample .NET solution for integrating with [Universal Agent](https://support.qasymphony.com/hc/en-us/articles/360004704172-Universal-Agent-Overview). It includes:
 
-1. Test projects that support .NET Core 2.2+: xUnitSample, MSTestSample, NUnitSample
+1. Test projects that support .NET Core 2.2: xUnitSample, MSTestSample, NUnitSample
 2. Test project that support .NET 4.5 (Windows only): UnitTestSample
 
 Follow these instructions for [integrating with Universal Agent](https://documentation.tricentis.com/qtest/od/en/content/qtest_launch/universal_agent_user_guides/universal_agent_overview.htm)
