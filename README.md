@@ -21,7 +21,7 @@ Follow these instructions for [integrating with Universal Agent](https://documen
 
 4. [Selenium.WebDriver.ChromeDriver (Win32, macOS, and Linux64)](https://www.nuget.org/packages/Selenium.WebDriver.ChromeDriver/)
 
-# .NET Core 2.2+: xUnitSample, MSTestSample, NUnitSample project
+# .NET Core 2.2: xUnitSample, MSTestSample, NUnitSample project
 
 ## Run tests on Command Prompt or Terminal
 Open Terminal (or Command Prompt on Windows). 
