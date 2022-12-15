@@ -1,4 +1,4 @@
-﻿# .NET Test Samples
+# .NET Test Samples
 This is sample .NET solution for integrating with [Universal Agent](https://support.qasymphony.com/hc/en-us/articles/360004704172-Universal-Agent-Overview). It includes:
 
 1. Test projects that support .NET Core 2.2: xUnitSample, MSTestSample, NUnitSample
